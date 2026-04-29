@@ -31,6 +31,7 @@ O sistema permite cadastrar medicamentos, acompanhar quais já foram tomados e m
 * ✅ Marcar medicamento como tomado
 * ❌ Remover medicamento
 * 🔍 Visualizar status (tomado ou não)
+* 👤 Cadastro de paciente com busca de endereço via CEP
 
 ---
 
@@ -39,6 +40,14 @@ O sistema permite cadastrar medicamentos, acompanhar quais já foram tomados e m
 * Java
 * Maven
 * JUnit
+
+---
+
+## 🌐 API utilizada
+
+Este projeto utiliza a API ViaCEP para buscar automaticamente o endereço do paciente a partir do CEP informado.
+
+🔗 https://viacep.com.br
 
 ---
 
@@ -57,6 +66,16 @@ meu-projeto/
 
 ## ▶️ Como executar o projeto
 
+Pelo IntelliJ (recomendado)
+*Abra o projeto no IntelliJ
+*Vá até a classe Main.java
+*Clique em Run ▶️
+
+Pelo terminal (opcional)
+*Caso tenha Java e Maven configurados:
+*mvn compile
+*mvn exec:java
+
 ### Pré-requisitos:
 
 * Java 17 ou superior
@@ -72,6 +91,7 @@ mvn exec:java
 ---
 
 ## 🧪 Como executar os testes
+O projeto possui teste de integração que valida a comunicação com a API ViaCEP, garantindo que os dados são retornados corretamente.
 
 ```bash
 mvn test

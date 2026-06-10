@@ -109,6 +109,35 @@ mvn checkstyle:check
 
 ## 🔄 Integração Contínua (CI)
 
+## Banco de Dados
+
+Este projeto utiliza PostgreSQL hospedado no Supabase.
+
+### Variáveis de Ambiente
+
+Configure:
+
+DB_HOST=db.apfyoeddppggfpmyqknt.supabase.co
+
+DB_PORT=5432
+
+DB_NAME=postgres
+
+DB_USER=postgres
+
+DB_PASSWORD=sua_senha
+
+### Estrutura da Tabela
+
+Tabela: medicamentos
+
+Campos:
+
+- id
+- nome
+- dosagem
+- horario
+
 O projeto utiliza GitHub Actions para executar automaticamente:
 
 * Build do projeto
